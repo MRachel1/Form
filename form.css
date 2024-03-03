@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("https://img.freepik.com/free-photo/abstract-dark-background-with-flowing-colouful-waves_1048-13124.jpg?t=st=1709408404~exp=1709412004~hmac=7c7198425bc8fc5bfa69603ad7b1d6845197a61a4615b15d2b9cc58267ee4ebe&w=740");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(223, 7, 169, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 3rem;
+
+}
+
+.forget label {
+    display: flex;
+    align-items: center;
+}
+.forget label input {
+    margin-right: 3px;
+}
+
+.forget a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forget a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(189, 13, 243, 0.979);
+    border:none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    color: #300257;
+}
+h1 {
+    font-size:  2rem;
+    color: rgba(189, 13, 243, 0.979);
+    text-align: center;
+}
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid rgb(86, 68, 153);
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.forget {
+    margin: 35px 0;
+    font-size: 0.85rem;
+    color: #cca1f0;
+    display: flex;
+    justify-content: space-between;
+}
+
+button:hover {
+    background-color: #ff01ea;
+}
+
+.register {
+    font-size: 0.9rem;
+    color: #ff3232;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color:#e16bff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+} 
